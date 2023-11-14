@@ -1,0 +1,114 @@
+package Adindanazmisiregar;
+
+import java.util.Scanner;
+
+public class Adindanazmi{
+    
+    public static void main(String[] args) {
+        double Nilai1;
+        double Nilai2;
+        double hasil;
+
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Input angka-1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("Input angka-2: ");
+        Nilai2 =keyboard.nextInt();
+//
+       // penjumlahan
+        hasil = Nilai1 + Nilai2;
+        System.out.println("Hasil = " + hasil);
+//
+        System.out.print("Input angka-1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("Input angka-2: ");
+        Nilai2 = keyboard.nextInt();
+//
+       // pengurangan
+        hasil = Nilai1 - Nilai2;
+        System.out.println("Hasil = " + hasil);
+//
+         System.out.print("Input angka-1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("Input angka-2: ");
+        Nilai2 = keyboard.nextInt();
+        
+             // perkalian
+        hasil = Nilai1 * Nilai2;
+        System.out.println("Hasil = " + hasil);
+//
+      System.out.print("Input angka-1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("Input angka-2: ");
+        Nilai2 = keyboard.nextInt();
+//
+//        // Pembagian
+        hasil = Nilai1 / Nilai2;
+        System.out.println("Hasil = " + hasil);
+//
+        System.out.print("Input angka-1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("Input angka-2: ");
+        Nilai2 = keyboard.nextInt();
+
+        // Sisa Bagi
+        hasil = Nilai1 % Nilai2;
+        System.out.println("Hasil = " + hasil);
+        
+        Scanner input = new Scanner(System.in);
+        
+        // Perbandingan
+        System.out.print("input Nilai1: ");
+        int nilai1 = keyboard.nextInt();
+        System.out.print("input Nilai1: ");
+        int nilai2 = keyboard.nextInt();
+        
+        
+        // Perbandingan sama dengan atau tidak sama 
+        if (Nilai1 == Nilai2) {
+            System.out.println("Nilai1 sama dengan Nilai2.");
+        } else if (Nilai1 != Nilai2) 
+            System.out.println("Nilai1 tidak sama dengan dari Nilai2.");
+        
+        // Perbandingan lebih besar dan lebih kecil
+        if (Nilai1 > Nilai2) {
+            System.out.println("Nilai1 lebih besar dari Nilai2.");
+        } else if (Nilai1 < Nilai2) 
+            System.out.println("Nilai1 lebih kecil dari Nilai2.");
+        
+         // Perbandingan lebih besar sama dengan atau lebih kecil sama dengan
+        if (Nilai1 >= nilai2) {
+            System.out.println("Nilai1 lebih besar sama dengan Nilai2.");
+        } else if (Nilai1 <= Nilai2) 
+            System.out.println("Nilai1 lebih kecil sama dengan dari Nilai2.");
+        
+
+        //Operator bitwise 
+        System.out.print("input Nilai1: ");
+        Nilai1 = keyboard.nextInt();
+        System.out.print("input Nilai1: ");
+        Nilai2 = keyboard.nextInt(); 
+        
+        // Operasi Bitwise OR
+        int hasilOR = nilai1 | nilai2;
+        System.out.println("Hasil dari " + nilai1 + " | " + nilai2 + " = " + hasilOR);
+
+        // Operasi Bitwise AND
+        int hasilAND = nilai1 & nilai2;
+        System.out.println("Hasl dari " + nilai1 + " & " + nilai2 + " = " + hasilAND);
+
+        // Operasi Bitwise XOR
+        int hasilXOR = nilai1 ^ nilai2;
+        System.out.println("Hasil dari " + nilai1 + " ^ " + nilai2 + " = " + hasilXOR);
+        
+        // Geser Ringt Shift (>>)
+        int ringtshift= nilai1 >> 1;
+        System.out.println("Hasil dari " + nilai1 + " >> 1 = " + ringtshift);
+
+        // Geser Left Shift (<<)
+        int leftshift = nilai1 << 1;
+        System.out.println("Hasil dari " + nilai1 + " << 1 = " + leftshift);
+        
+    }   
+}
